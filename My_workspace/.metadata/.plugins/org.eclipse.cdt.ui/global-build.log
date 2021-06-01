@@ -1,0 +1,23 @@
+11:16:26 **** Incremental Build of configuration Debug for project time_base_100ms ****
+make -j8 all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\My_workspace\time_base_100ms\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/time_base_100ms/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/time_base_100ms/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/time_base_100ms/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/time_base_100ms/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/time_base_100ms/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+Finished building: ../Core/Src/main.c
+ 
+Building target: time_base_100ms.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "time_base_100ms.elf" @"objects.list"   -lm
+Finished building target: time_base_100ms.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "time_base_100ms.elf" "time_base_100ms.hex"
+arm-none-eabi-size "time_base_100ms.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3328	     20	   1644	   4992	   1380	time_base_100ms.elf
+ 
+11:16:36 **** Incremental Build of configuration Debug for project time_base_100ms ****
+make -j8 all 
+make: Nothing to be done for 'all'.

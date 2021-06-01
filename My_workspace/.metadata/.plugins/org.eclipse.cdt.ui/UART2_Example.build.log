@@ -1,0 +1,23 @@
+12:34:05 **** Incremental Build of configuration Debug for project UART2_Example ****
+make -j8 all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\My_workspace\UART2_Example\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/UART2_Example/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/UART2_Example/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/UART2_Example/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/UART2_Example/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/UART2_Example/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+Finished building: ../Core/Src/main.c
+ 
+Building target: UART2_Example.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART2_Example.elf" @"objects.list"   -lm
+Finished building target: UART2_Example.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "UART2_Example.elf" "UART2_Example.hex"
+arm-none-eabi-size "UART2_Example.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2412	     20	   1636	   4068	    fe4	UART2_Example.elf
+ 
+
+12:34:07 Build Finished (took 2s.272ms)
+

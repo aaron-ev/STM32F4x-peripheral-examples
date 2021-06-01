@@ -1,0 +1,34 @@
+18:20:26 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8MHz ****
+make -j8 all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\My_workspace\HSE_SYSCLK_8MHz\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/HSE_SYSCLK_8MHz/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/HSE_SYSCLK_8MHz/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/HSE_SYSCLK_8MHz/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/HSE_SYSCLK_8MHz/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/My_workspace/HSE_SYSCLK_8MHz/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+../Core/Src/main.c: In function 'SystemClockConfig':
+../Core/Src/main.c:31:11: warning: variable 'AHBClk' set but not used [-Wunused-but-set-variable]
+  uint32_t AHBClk = 0;
+           ^~~~~~
+../Core/Src/main.c:30:11: warning: variable 'sysClk' set but not used [-Wunused-but-set-variable]
+  uint32_t sysClk = 0;
+           ^~~~~~
+../Core/Src/main.c: In function 'HAL_UART_MspInit':
+../Core/Src/main.c:75:20: warning: unused variable 'uart2_tx_rx' [-Wunused-variable]
+   GPIO_InitTypeDef uart2_tx_rx;
+                    ^~~~~~~~~~~
+Finished building: ../Core/Src/main.c
+ 
+Building target: HSE_SYSCLK_8MHz.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HSE_SYSCLK_8MHz.elf" @"objects.list"   -lm
+Finished building target: HSE_SYSCLK_8MHz.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "HSE_SYSCLK_8MHz.elf" "HSE_SYSCLK_8MHz.hex"
+arm-none-eabi-size "HSE_SYSCLK_8MHz.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6416	     20	   1636	   8072	   1f88	HSE_SYSCLK_8MHz.elf
+ 
+
+18:20:27 Build Finished (took 1s.597ms)
+
