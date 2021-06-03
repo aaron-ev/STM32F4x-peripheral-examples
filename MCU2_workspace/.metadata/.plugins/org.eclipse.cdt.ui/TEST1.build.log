@@ -1,6 +1,0 @@
-22:48:07 **** Incremental Build of configuration Release for project TEST1 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-
-22:48:07 Build Finished (took 273ms)
-
