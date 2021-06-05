@@ -1,0 +1,466 @@
+20:09:32 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:09:59 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:11:22 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building file: ../Core/Src/it.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\workSpace\timer_OC_1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/it.d" -MT"Core/Src/it.o" -o "Core/Src/it.o" "../Core/Src/it.c"
+../Core/Src/it.c: In function 'TIM6_DAC_IRQHandler':
+../Core/Src/it.c:18:2: warning: implicit declaration of function 'TIM2_IRQHandler'; did you mean 'FSMC_IRQHandler'? [-Wimplicit-function-declaration]
+  TIM2_IRQHandler(&tim2OC);
+  ^~~~~~~~~~~~~~~
+  FSMC_IRQHandler
+Finished building: ../Core/Src/it.c
+ 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5080	     36	   1644	   6760	   1a68	timer_OC_1.elf
+ 
+20:11:34 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5080	     36	   1644	   6760	   1a68	timer_OC_1.elf
+ 
+20:11:59 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building file: ../Core/Src/it.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\workSpace\timer_OC_1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/it.d" -MT"Core/Src/it.o" -o "Core/Src/it.o" "../Core/Src/it.c"
+Finished building: ../Core/Src/it.c
+ 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6028	     36	   1644	   7708	   1e1c	timer_OC_1.elf
+ 
+20:15:05 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6028	     36	   1644	   7708	   1e1c	timer_OC_1.elf
+ 
+20:18:08 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building file: ../Core/Src/msp.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\workSpace\timer_OC_1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/msp.d" -MT"Core/Src/msp.o" -o "Core/Src/msp.o" "../Core/Src/msp.c"
+Finished building: ../Core/Src/msp.c
+ 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6036	     36	   1644	   7716	   1e24	timer_OC_1.elf
+ 
+20:18:17 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6036	     36	   1644	   7716	   1e24	timer_OC_1.elf
+ 
+20:20:47 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:21:35 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:23:16 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building file: ../Core/Src/msp.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\workSpace\timer_OC_1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/msp.d" -MT"Core/Src/msp.o" -o "Core/Src/msp.o" "../Core/Src/msp.c"
+Finished building: ../Core/Src/msp.c
+ 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6036	     36	   1644	   7716	   1e24	timer_OC_1.elf
+ 
+20:27:50 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\workSpace\timer_OC_1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c: In function 'HAL_TIM_OC_DelayElapsedCallback':
+../Core/Src/main.c:110:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_1,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_1)+pulse500Hz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1386:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:110:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_1,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_1)+pulse500Hz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1387:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:110:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_1,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_1)+pulse500Hz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1388:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:110:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_1,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_1)+pulse500Hz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1389:37: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)))
+                                     ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:115:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_2,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_2)+pulse1KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1386:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:115:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_2,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_2)+pulse1KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1387:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:115:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_2,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_2)+pulse1KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1388:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:115:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_2,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_2)+pulse1KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1389:37: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)))
+                                     ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:120:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_3,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_3)+pulse2KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1386:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:120:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_3,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_3)+pulse2KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1387:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:120:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_3,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_3)+pulse2KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1388:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:120:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_3,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_3)+pulse2KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1389:37: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)))
+                                     ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:125:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_4,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_4)+pulse4KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1386:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:125:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_4,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_4)+pulse4KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1387:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:125:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_4,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_4)+pulse4KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1388:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+                                                                        ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+../Core/Src/main.c:125:71: warning: passing argument 1 of 'HAL_TIM_ReadCapturedValue' from incompatible pointer type [-Wincompatible-pointer-types]
+    __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_4,HAL_TIM_ReadCapturedValue(&htim,TIM_CHANNEL_4)+pulse4KHz);
+                                                                       ^
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1389:37: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+    ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)))
+                                     ^~~~~~~~~~~
+In file included from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/stm32f4xx_hal_conf.h:403:0,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:8:
+C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:2027:10: note: expected 'TIM_HandleTypeDef * {aka struct <anonymous> *}' but argument is of type 'TIM_HandleTypeDef ** {aka struct <anonymous> **}'
+ uint32_t HAL_TIM_ReadCapturedValue(TIM_HandleTypeDef *htim, uint32_t Channel);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../Core/Src/main.c
+ 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6036	     36	   1644	   7716	   1e24	timer_OC_1.elf
+ 
+20:28:41 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6036	     36	   1644	   7716	   1e24	timer_OC_1.elf
+ 
+20:32:43 **** Incremental Build of configuration Debug for project timer_OC_1 ****
+make -j8 all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\aaron\Desktop\git_udemy_MCU2\workSpace\timer_OC_1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F446xx -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Core/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/aaron/Desktop/git_udemy_MCU2/workSpace/timer_OC_1/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+Finished building: ../Core/Src/main.c
+ 
+Building target: timer_OC_1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F446RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "timer_OC_1.elf" @"objects.list"   -lm
+Finished building target: timer_OC_1.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "timer_OC_1.elf" "timer_OC_1.hex"
+arm-none-eabi-size "timer_OC_1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6024	     36	   1644	   7704	   1e18	timer_OC_1.elf
+ 
