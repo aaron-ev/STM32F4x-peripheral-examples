@@ -1,0 +1,109 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 4, 2021
+ *      Author: Aarón Escoboza Villegas
+ */
+
+#include "main.h"
+#include "math.h"
+
+TIM_HandleTypeDef tim2PWM = {0};
+
+uint32_t pulse40Porcent = 40;
+uint32_t period = 1000;
+int main(void)
+{
+	HAL_Init();
+	GPIO_Init();
+	TIM2_Init();
+	if(HAL_TIM_OC_Start_IT(&tim2OC,TIM_CHANNEL_1) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	while(1);
+	return 0;
+}
+
+void GPIO_Init()
+{
+	GPIO_InitTypeDef ledBoard = {0};
+
+	ledBoard.Mode = GPIO_MODE_OUTPUT_PP;
+	ledBoard.Pull = GPIO_PULLUP;
+	ledBoard.Pin = GPIO_PIN_5;
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+	HAL_GPIO_Init(GPIOA,&ledBoard);
+}
+
+void TIM2_Init(void)
+{
+	TIM_OC_InitTypeDef tim2Channel = {0};
+
+	// Time base unit settings
+	tim2PWM.Instance = TIM2;
+	tim2PWM.Init.Prescaler = 16000-1; // clk 1kHz
+	tim2PWM.Init.Period = period;// 1Hz
+
+	if(HAL_TIM_PWM_Init(&tim2PWM) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	//  Channel settings
+	tim2Channel.OCMode = TIM_OCMODE_PWM1;
+	tim2Channel.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+	tim2Channel.Pulse = pulse40Porcent*period/100;
+
+	if(HAL_TIM_PWM_ConfigChannel(&tim2PWM,&tim2Channel,TIM_CHANNEL_1) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	tim2Channel.Pulse = pulse1KHz;
+
+	if(HAL_TIM_OC_ConfigChannel(&tim2OC,&tim2Channel,TIM_CHANNEL_2) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	tim2Channel.Pulse = pulse2KHz;
+
+	if(HAL_TIM_OC_ConfigChannel(&tim2OC,&tim2Channel,TIM_CHANNEL_3) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	tim2Channel.Pulse = pulse4KHz;
+
+	if(HAL_TIM_OC_ConfigChannel(&tim2OC,&tim2Channel,TIM_CHANNEL_4) != HAL_OK)
+	{
+		Error_Handler();
+	}
+}
+void Error_Handler(void)
+{
+	while(1);
+}
+
+ void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	 //f = 500 Hz
+	 if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1)
+	 {
+		 __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_1,HAL_TIM_ReadCapturedValue(htim,TIM_CHANNEL_1)+pulse500Hz);
+	 }
+	 //f = 1KHz
+	 if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2)
+	 {
+		 __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_2,HAL_TIM_ReadCapturedValue(htim,TIM_CHANNEL_2)+pulse1KHz);
+	 }
+	 //f = 2KHz
+	 if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_3)
+	 {
+		 __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_3,HAL_TIM_ReadCapturedValue(htim,TIM_CHANNEL_3)+pulse2KHz);
+	 }
+	 //f = 4KHz
+	 if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_4)
+	 {
+		 __HAL_TIM_SET_COMPARE(htim,TIM_CHANNEL_4,HAL_TIM_ReadCapturedValue(htim,TIM_CHANNEL_4)+pulse4KHz);
+	 }
+}

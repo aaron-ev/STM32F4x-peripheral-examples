@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="TIM6" key="selection"/>
+		<item value="TIM_Output_Compare_and_PWM_modes" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="TIM_Output_Compare_and_PWM_modes"/>
 			<item value="TIM6"/>
 			<item value="TIM_Input_Capture_Prescaler"/>
 			<item value="RCC_HSE_Config"/>
@@ -15,7 +16,6 @@
 			<item value="TIM2"/>
 			<item value="HAL_TIM_Base_MspInit"/>
 			<item value="msp"/>
-			<item value="TIM_Input_Capture_Selection"/>
 		</list>
 		<list key="replacehistory">
 		</list>
